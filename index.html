@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM</title>
+</head>
+<body>
+    <h1>BASIC CALCULATOR</h1>
+
+    <label for="">First Number</label>
+    <input oninput="inputDetect()" id="num1" type="number">
+    <br>
+    <br>
+    <label for="">Second Number</label>
+    <input oninput="inputDetect()" id="num2" type="number">
+
+    <h2>Choose an operation:</h2>
+    <button id="addition" onclick="sum()">+</button>
+    <button id="subtraction" onclick="diff()">-</button>
+    <button id="multiplication" onclick="prod()">*</button>
+    <button id="division" onclick="quo()">/</button>
+
+    <br>
+    <br>
+    <button id="calculate" onclick="calc()">Calculate</button>
+    <button id="clear" onclick="clr()">Clear</button>
+    <h2 id="result"></h2> 
+
+    <script src="main.js"></script>
+</body>
+</html>
